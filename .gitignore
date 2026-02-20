@@ -1,0 +1,22 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Dependency/vendor directories
+/node_modules/
+/vendor/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+

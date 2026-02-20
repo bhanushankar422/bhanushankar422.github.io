@@ -1,0 +1,78 @@
+/* Founders responsive grid */
+.founders-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .founders-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch; /* cards match height in a row */
+    }
+}
+
+/* Make each card the same visual “box” */
+.founder-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+/* Same image size for all founders */
+.founder-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;     /* square slot */
+    object-fit: cover;       /* crop to fill the slot */
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+/* Keep headings consistent */
+.founder-card h3 {
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+/* Normalize content area so columns look balanced */
+.founder-card p {
+    margin: 0.35rem 0;
+}
+
+/* Optional: ensure the “LinkedIn” line sits at the bottom of each card */
+.founder-card p:last-child {
+    margin-top: auto;
+}
+
+/* icon-only social row pinned to bottom (works with your existing .founder-card flex) */
+.social-row {
+    margin-top: auto;   /* pushes icon row to bottom of the card */
+    margin-bottom: 0;
+}
+
+/* clickable icon button */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.15);
+    text-decoration: none;
+}
+
+/* inherit text color so it matches theme; hover just gives subtle feedback */
+.social-icon:hover {
+    border-color: rgba(0,0,0,0.3);
+}
+
+/* svg sizing */
+.linkedin-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+}

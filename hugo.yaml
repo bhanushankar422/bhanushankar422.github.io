@@ -1,0 +1,26 @@
+baseURL: "https://www.ahurg.com/"
+languageCode: "en-us"
+title: "AHURG"
+theme: "ananke"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+    - name: "About"
+      url: "/about/"
+      weight: 20
+    - name: "Product & Services"
+      url: "/services/"
+      weight: 30
+
+params:
+  custom_css:
+    - "ananke/css/custom.css"
+  mainSections: []
