@@ -36,3 +36,8 @@ hugo
 - Update existing page content: edit corresponding file in `content/`.
 - Add images for a section bundle page: place them in the same folder as `index.md`.
 
+## Caching policy
+
+- Site cache TTL is set to 30 minutes (`max-age=1800`) via `static/_headers` for hosts that support `_headers` files.
+- A head hook in `layouts/partials/head-additions.html` forces a cache-busting reload every 30 minutes so new changes are picked up reliably.
+

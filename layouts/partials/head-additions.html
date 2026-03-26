@@ -1,0 +1,10 @@
+<script>
+  (function () {
+    const ttlMs = 30 * 60 * 1000;
+    window.setTimeout(function () {
+      const url = new URL(window.location.href);
+      url.searchParams.set("v", String(Math.floor(Date.now() / ttlMs)));
+      window.location.replace(url.toString());
+    }, ttlMs);
+  })();
+</script>
