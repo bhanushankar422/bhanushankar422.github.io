@@ -25,8 +25,7 @@
 /* Same image size for all founders */
 .founder-card img {
     width: 100%;
-    aspect-ratio: 1 / 1;     /* square slot */
-    object-fit: cover;       /* crop to fill the slot */
+    height: auto;
     border-radius: 12px;
     display: block;
     margin-bottom: 0.75rem;

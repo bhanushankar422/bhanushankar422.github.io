@@ -12,7 +12,7 @@ AHURG’s mission is to empower small-scale industries with accessible technolog
 
   <div class="founder-card">
     <h3>Bharat Pottipareddy</h3>
-    <img src="bharat.jpg" alt="Bharat Pottipareddy">
+    <img src="bharat_prof.png" alt="Bharat Pottipareddy">
     <p>Role + 1–2 lines about background.</p>
     <p class="social-row">
       <a class="social-icon" href="https://www.linkedin.com/in/bharat-pottipareddy/" target="_blank" rel="noopener noreferrer"
@@ -26,7 +26,7 @@ AHURG’s mission is to empower small-scale industries with accessible technolog
 
   <div class="founder-card">
     <h3>Bhanu Pottipareddy</h3>
-    <img src="bhanu_1.jpg" alt="Bhanu Pottipareddy">
+    <img src="bhanu_prof.png" alt="Bhanu Pottipareddy">
     <p>Role + 1–2 lines about background.</p>
     <p class="social-row">
       <a class="social-icon" href="https://www.linkedin.com/in/bhanu-shankar-pottipareddy/" target="_blank" rel="noopener noreferrer"
