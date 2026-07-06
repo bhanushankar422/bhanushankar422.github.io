@@ -60,7 +60,17 @@
   <meta name="twitter:title" content="AHURG">
   <meta name="twitter:description" content="Practical innovation for everyday businesses">
 
-	
+	<script>
+  (function () {
+    const ttlMs = 30 * 60 * 1000;
+    window.setTimeout(function () {
+      const url = new URL(window.location.href);
+      url.searchParams.set("v", String(Math.floor(Date.now() / ttlMs)));
+      window.location.replace(url.toString());
+    }, ttlMs);
+  })();
+</script>
+
   </head><body class="ma0 avenir bg-near-white development is-home">
     
 

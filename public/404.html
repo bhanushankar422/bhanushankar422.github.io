@@ -51,7 +51,17 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="404 Page not found">
 
-	
+	<script>
+  (function () {
+    const ttlMs = 30 * 60 * 1000;
+    window.setTimeout(function () {
+      const url = new URL(window.location.href);
+      url.searchParams.set("v", String(Math.floor(Date.now() / ttlMs)));
+      window.location.replace(url.toString());
+    }, ttlMs);
+  })();
+</script>
+
   </head><body class="ma0 avenir bg-near-white development is-404">
     
 
